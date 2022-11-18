@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <div class="header-bar-large">
+        <style>
+          .header-bar-large {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            padding-bottom: 10%;
+            margin-top: 5px;
+          }
+          .header-bar-small {
+            display: inline-block;
+            flex-grow: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+          }
+        </style>
+        <div class="header-bar-small">
+          <style>
+            .image-bar {
+              display: inline-block;
+              position: relative;
+              margin-right: 30px;
+            }
+            .advanced-bar {
+              display: inline-block;
+              position: relative;
+              margin-right: 20px;
+            }
+          </style>
+          <div class="image-bar">
+            <a class="image-search" href="./imageSearch.html" target="_top">图片</a>
+          </div>
+          <div class="advanced-bar">
+            <a class="advanced-search" href="./advancedSearch.html" target="_top">高级</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="google-icon-div">
+        <style>
+          .google-icon-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .icon {
+            height: 100%;
+            margin-top: auto;
+          }
+        </style>
+        
+        <div class="icon icon-img">
+          <a href="https://www.google.com.sg/">
+            <img src="googlelogo_color_272x92dp.png"class="logo-img" alt="Google Logo" title="Google Search" height="92">
+          </a>
+
+          <div>
+            <form class="form-class" action="https://www.google.com/search" method="GET" role="search" target="_top">
+            <div class="serach-form">
+              <style>
+                .serach-form {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-top: auto;
+                  width: 100%;
+                }
+              </style>
+              <input type="text" name="q" class="search-bar-input" placeholder="Search Google">
+              <input type="submit" value="Search" class="search-bar-button">
+            </div>
+          </form>
+            
+          </div>
+        
+        </div>
+      </div>
+</div>
+</body>
+</html>
